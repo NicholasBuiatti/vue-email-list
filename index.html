@@ -18,6 +18,12 @@
         <h4 v-for="element, i in emails">{{ element }}</h4>
         <button @click="push">Stampa email</button>
     </div>
+    <h1 class="text-warning text-center">Bonus</h1>
+    <div class="container bg-primary">
+        <h4 v-for="element, i in emailsBonus">{{ element }}</h4>
+        <input type="number" v-model="inputNum">
+        <button @click="print">Stampa email</button>
+    </div>
 </div>
 
 <!-- VUE.JS -->
