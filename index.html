@@ -20,7 +20,7 @@
     </div>
     <h1 class="text-warning text-center">Bonus</h1>
     <div class="container bg-primary">
-        <h4 v-for="element, i in emailsBonus">{{ element }}</h4>
+        <h4 v-for="element, i in emailsBonus" v-show="emailsBonus.length == numLock">{{ element }}</h4>
         <input type="number" v-model="inputNum">
         <button @click="print">Stampa email</button>
     </div>

@@ -7,6 +7,7 @@ createApp({
             emails: [],
             emailsBonus: [],
             inputNum: '',
+            numLock : '',
         }
     },
     methods: {
@@ -25,7 +26,7 @@ createApp({
         },
         print() {
             this.emailsBonus = [];
-            
+            this.numLock = this.inputNum
             for (let i = 0; i < this.inputNum; i++) {
                 this.requestAndPush(this.emailsBonus)
             }
